@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)\..\LICENSE">
+      <Link>LICENSE</Link>
+      <Pack>true</Pack>
+      <PackagePath/>
+      <Visible>false</Visible>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)\..\packageIcon.png">
+      <Link>packageIcon.png</Link>
+      <Pack>true</Pack>
+      <PackagePath/>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+</Project>

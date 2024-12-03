@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="SvetoPismo.Tools.Branding.props" />
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <IsPackable>true</IsPackable>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <Description>Provides default branding properties and assets for organization's NuGet projects.</Description>
+        <PackageTags>branding;defaults;icons;nuget;development</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- TFM -->
+        <None Pack="true" PackagePath="build" Include="SvetoPismo.Tools.Branding.props" />
+        <None Pack="true" PackagePath="build" Include="SvetoPismo.Tools.Branding.targets" />
+        <!-- TFMs -->
+        <None Pack="true" PackagePath="buildMultiTargeting" Include="SvetoPismo.Tools.Branding.props" />
+        <None Pack="true" PackagePath="buildMultiTargeting" Include="SvetoPismo.Tools.Branding.targets" />
+        <!-- Transitive -->
+        <None Pack="true" PackagePath="buildTransitive" Include="SvetoPismo.Tools.Branding.props" />
+        <None Pack="true" PackagePath="buildTransitive" Include="SvetoPismo.Tools.Branding.targets" />
+        <!-- Assets -->
+        <None Pack="true" PackagePath="" Include="assets/packageIcon.png" />
+        <None Pack="true" PackagePath="" Include="assets/LICENSE" />
+        <None Pack="true" PackagePath="" Include="README.md" />
+    </ItemGroup>
+</Project>
